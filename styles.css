@@ -1,35 +1,49 @@
-/*  your css code here. If applicable */
 :root {
-	background-color: rgb(135, 206, 235);
-}
-article {
-    margin: 20px;
-}
-.first-child {
-	width: 100%;
-	background-color: black;
-	color: white;
-	padding: 10px;
-}
-p:last-child {
-color: red;
+    background-color: rgb(135, 206, 235);
 }
 
-li {
-background-color: grey;
-	width: 50%;
-	padding: 10px;
+.page-content {
+    padding: 20px;
 }
 
-li:nth-child(odd) {
-	background-color: white;
+article p:first-child {
+    color: white;
+    background-color: black;
 }
 
-li:first-child,
-li:last-child {
-	font-size: 22px;
+article p:nth-child(2) {
+    color: inherit;
+    background-color: inherit;
 }
 
-li:nth-last-child(3) {
+article p:last-child {
+    color: red;
+    background-color: inherit;
+}
+
+.custom-list {
+/*     list-style: none */
+    
+    margin-top: 20px;
+}
+
+.custom-list li {
+    background-color: gray;
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.custom-list li:nth-child(odd) {
+    background-color: white;
+}
+
+.custom-list li:first-child,
+.custom-list li:last-child {
+    font-size: 22px;
+}
+
+.custom-list li:nth-last-child(3) {
     background-color: pink;
 }
